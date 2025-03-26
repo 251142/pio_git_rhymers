@@ -9,7 +9,7 @@ public class DefaultCountingOutRhymer {
     public static final int DEFAULT_RETURN_VALUE = -1;
 
 
-    private int[] NUMBERS = new int[ARRAY_CAPACITY];
+    private final int[] NUMBERS = new int[ARRAY_CAPACITY];
 
     public int total = EMPTY_RHYMER_INDICATOR;
 
