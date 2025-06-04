@@ -16,10 +16,10 @@ class RhymersDemo {
 
     private static void extracted(RhymersFactory factory) {
         DefaultCountingOutRhymer[] rhymers = { 
-            factory.GetStandardRhymer(), 
-            factory.GetFalseRhymer(),
-            factory.GetFIFORhymer(), 
-            factory.GetHanoiRhymer()
+            factory.getStandardRhymer(),
+            factory.getFalseRhymer(),
+            factory.getFIFORhymer(),
+            factory.getHanoiRhymer()
         };
 
         for (int i = 1; i < MAX_ITERATIONS; i++)
