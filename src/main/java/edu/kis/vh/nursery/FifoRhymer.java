@@ -6,7 +6,7 @@ package edu.kis.vh.nursery;
  */
 public class FifoRhymer extends DefaultCountingOutRhymer {
 
-    public final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     /**
      * Removes and returns the first inserted element in FIFO order.
