@@ -1,9 +1,7 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.DefaultCountingOutRhymer;
-import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
-import edu.kis.vh.nursery.factory.Rhymersfactory;
+import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
 
@@ -12,16 +10,16 @@ class RhymersDemo {
     public static final String TOTAL_REJECTED_IS = "total rejected is ";
 
     public static void main(String[] args) {
-        Rhymersfactory factory = new DefaultRhymersFactory();
-        extracted(factory);
+        RhymersFactory factory = new DefaultRhymersFactory();
+        testRhymers(factory);
     }
 
-    private static void extracted(Rhymersfactory factory) {
+    private static void testRhymers(RhymersFactory factory) {
         DefaultCountingOutRhymer[] rhymers = { 
-            factory.GetStandardRhymer(), 
-            factory.GetFalseRhymer(),
-            factory.GetFIFORhymer(), 
-            factory.GetHanoiRhymer()
+            factory.getStandardRhymer(),
+            factory.getFalseRhymer(),
+            factory.getFIFORhymer(),
+            factory.getHanoiRhymer()
         };
 
         for (int i = 1; i < MAX_ITERATIONS; i++)
